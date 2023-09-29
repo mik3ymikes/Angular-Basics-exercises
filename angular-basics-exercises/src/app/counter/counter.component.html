@@ -1,2 +1,5 @@
-<button (click)="increase">Click me! </button>
+<button (click)="increase()">Click me to increase! </button>
+<button (click)="decrease()">Click me to decrease! </button>
+
 <!-- <p>[(ngModel)]="counter"</p> -->
+<h1>This is your number :<span *ngFor="let logItem of log"> {{logItem}} </span></h1>

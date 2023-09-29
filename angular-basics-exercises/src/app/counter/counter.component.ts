@@ -5,12 +5,23 @@ import { Component } from '@angular/core'
   templateUrl: './counter.component.html'
 })
 
+
 export class CounterComponent{
-counter=0
+  log=[]
+ counter=0
+
 
 increase(){
-  this.counter=this.counter+1
 
+  this.counter=this.counter+1
+  this.log.push(this.counter)
 }
+
+decrease(){
+
+  this.counter=this.counter-1
+  this.log.push(this.counter)
+}
+
 
 }
